@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Web fonts */
+@font-face {
+  font-family: 'DobkinPlain';
+  src: url('DobkinPlain.woff') format('woff'),
+       url('DobkinPlain.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CACChampagne';
+  src: url('cac_champagne.woff') format('woff'),
+       url('cac_champagne.ttf') format('truetype');
+}
+
+body{
+    background-color: #763d8b;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    background-color: antiquewhite;
+}
+
+html {
+    height: 100%; /* 确保body和html元素占据整个视口高度 */ 
+} 
+    
+body > main {
+    display: flex; /* 使 part 元素使用 Flexbox 布局 */
+    flex-direction: row; /* 水平排列子元素 */
+    flex-grow: 1; /* 允许 part 元素增长以填充剩余空间 */
+} 
+
+header {
+    background-color: #6d0fa3;
+    color: white;
+    padding: 0;
+}
+
+header nav a {
+    color: #E0E0E0;
+}
+
+/* Apply custom fonts to h1 and h2 */
+h1 {
+    font-family: 'CACChampagne', cursive;
+}
+
+h2 {
+    font-family: 'DobkinPlain', cursive;
+}
+
+aside h1 {
+    font-family: Arial, sans-serif; /* Override the font for h1 within aside */
+}
+
+aside h2 {
+    font-family: Arial, sans-serif; /* Override the font for h2 within aside */
+}
+
+body > main > section#leftcol {
+    padding: 20px;
+    background-color: #222;
+    color: #ebe8d7;
+}
+
+/* Apply background color to the first aside */
+section#leftcol aside:first-of-type {
+    background-color: rgba(230, 138, 126, 0.989); /* Semi-transparent orange */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Apply a different background color to the second aside */
+section#leftcol aside:last-of-type {
+    background-color: rgba(255, 226, 120, 0.965); /* Semi-transparent steel blue */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Background color for the right column */
+body > main > section#rightcol {
+    background-color: #763d8b; /* Dark slate blue */
+    color: #ffffff; /* Set text color to white for better contrast */
+    padding: 20px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6d0fa3;
+    color: white;
+}
